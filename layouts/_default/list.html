@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="div-main">
+
+    <nav>
+        <ul>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>List page</h1>
+
+    <ul>
+        {{ range .Pages }}
+            <li>{{ .Date }} <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}

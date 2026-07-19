@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XRTYN5DXE"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5XRTYN5DXE');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Justcore">
+        <meta name="description" content="Official website of Andrey Justcore – a student game developer based in Moscow.">
+        <link rel="canonical" href="https://justcore.space/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph for Socials -->
+        <meta property="og:title" content="Andrey Justcore">
+        <meta property="og:description" content="Official website of Andrey Justcore – a student game developer based in Moscow.">
+        <meta property="og:image" content="https://justcore.space/img/justcore_logo.png">
+        <meta property="og:url" content="https://justcore.space/">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Andrey Justcore">
+        <meta name="twitter:description" content="Official website of Andrey Justcore – a student game developer based in Moscow.">
+        <meta name="twitter:image" content="https://justcore.space/img/justcore_logo.png">
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andrey \"Justcore\" Lebedev",
+        "givenName": "Andrey",
+        "familyName": "Lebedev",
+        "alternateName": "Justcore",
+        "url": "https://justcore.space",
+        "sameAs": [
+            "https://justcore.bsky.social",
+            "https://x.com/andreyjustcore",
+            "https://github.com/justcoredev",
+            "https://justcore.itch.io",
+            "https://www.wikidata.org/wiki/Q135394710"
+        ],
+        "mainEntityOfPage":{
+        "@type":"WebPage",
+        "@id":"https://justcore.space/"
+        },
+        "jobTitle": "Game Developer",
+        "description": "Game developer based in Moscow.",
+        "birthDate": "2006-04-18",
+        "image": "https://justcore.space/img/justcore_logo.png"
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Justcore",
+        "url": "https://justcore.space/",
+        "creator": {
+            "@type": "Person",
+            "name": "Justcore"
+        },
+        "mainEntity": {
+            "@type": "Person",
+            "@id": "https://www.wikidata.org/wiki/Q135394710"
+        }
+        }
+        </script>
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Who is Justcore?",
+            "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Andrey \"Justcore\" Lebedev is an indie game developer based in Moscow, Russia."
+            }
+        }]
+        }
+        </script>
+
+        <link rel="preload" href="/img/empty.png" as="image">  
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Socials font -->
+        <script src="https://kit.fontawesome.com/71f50d4261.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        {{ $css := resources.Get "scss/main.scss" | toCSS }}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    </head>
+    <body>
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+    </body>
+</html>
