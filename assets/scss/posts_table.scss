@@ -1,0 +1,105 @@
+.latest-posts {
+    color: #ccc;
+    min-width: 500px;
+    p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    ul{
+        padding: 0px;
+        margin-top: 0px;
+        list-style: none;
+    }
+    li{
+        padding-top: 10px;
+        font-size: 15px;
+        a{
+            color: #ccc;
+            text-decoration: none;
+        }
+    }
+}
+
+.posts-table {
+    border-collapse: collapse;
+    font-size: 20px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.posts-table td {
+    padding: 3px 8px;
+    vertical-align: top;
+}
+
+.post-badge {
+    width: 50px;
+    text-align: right;
+}
+
+.new-badge {
+    color: #B6D53C;
+}
+
+.post-date {
+    color: #3f3f3f;
+    white-space: nowrap;
+}
+
+@media (max-width: 550px) {
+    .landing-container{
+            .posts-table,
+        .posts-table tbody {
+            display: block;
+        }
+
+        .posts-table tr {
+            display: grid;
+            grid-template-columns: 130px auto;
+            grid-template-areas:
+                "date badge"
+                "title title";
+            margin-bottom: 0px;
+        }
+
+        .article-container{
+            article, .posts-table, h1{
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+
+        .post-badge {
+            grid-area: badge;
+            width: 0px;
+            text-align: left;
+            padding-right: 0;
+        }
+
+        .post-date {
+            width: 0px;
+            grid-area: date;
+        }
+
+        .post-title {
+            grid-area: title;
+        }
+    }
+
+    .article-container{
+        p, a, td{
+            font-size: 15px;
+        }
+    }
+
+    .latest-posts{
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .landing-container{
+        width: 100%;
+    }
+}

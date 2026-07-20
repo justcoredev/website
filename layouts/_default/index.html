@@ -1,10 +1,49 @@
 {{ define "main" }}
-<hgroup>
-    <!-- Landing page -->
-    <center>
-        <hgroup id="brand">
-            <img src="/img/justcore_logo.png" id="justcore-logo" alt="Logo"/>
-        </hgroup>
-    </center>
-</hgroup>
+
+<div class="landing-container">
+    <div class="landing-header">
+        <img src="/img/justcore_logo_a.png" id="justcore-logo" alt="Logo"/>
+
+        <ul class="landing-nav"> 
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/post">Posts</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="latest-posts">
+        <table class="posts-table">
+            {{ $posts := .Site.GetPage "post" }}
+            {{ range $i, $post := $posts.Pages.ByDate.Reverse }}
+            <tr>
+                <td class="post-badge">
+                    {{ if eq $i 0 }}
+                        <span class="new-badge">NEW!</span>
+                    {{ end }}
+                </td>
+
+                <td class="post-date">
+                    {{ $post.Date.Format "2006-01-02" }}
+                </td>
+
+                <td class="post-title">
+                    <a href="{{ $post.RelPermalink }}">{{ $post.Title }}</a>
+                </td>
+            </tr>
+            {{ end }}
+        </table>
+    </div>
+
+    <hr>
+
+    <footer>
+        <small>
+            (c) {{ now.Year }} Justcore
+        </small>
+    </footer>
+
+</div>
+
 {{ end }}

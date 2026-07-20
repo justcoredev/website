@@ -1,0 +1,44 @@
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal; }
+
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal; }
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic; }
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic; }
+
+.lato-regular, p, a, li, small, td {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.lato-bold, h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+p, a, li, small, td {
+  letter-spacing: 1px;
+  font-size: 20px; }
+
+small {
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #333; }
+
+@media (max-width: 550px) {
+  .side-nav p, .side-nav a, .side-nav li, .side-nav td, article p, article a, article li, article td {
+    font-size: 15px; }
+  small {
+    font-size: 12px; } }

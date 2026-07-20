@@ -1,10 +1,36 @@
 {{ define "main" }}
-<div class="div-main">
 
-    <h1>Single page</h1>
+<div class="article-container">
 
-    <ul>
+    <nav>
+        <ul class="side-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/post">Posts</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h1>{{ .Title }}</h1>
+
+    <article>
+        {{ if eq .Section "post" }}
+            <p class="article-date">
+                {{ .Date.Format "2006-01-02" }}
+            </p>
+        {{ end }}
+
         {{ .Content }}
-    </ul>
+    </article>
+
+    <hr>
+
+    <footer>
+        <small>(c) {{ now.Year }} Justcore</small>
+    </footer>
+
 </div>
+
 {{ end }}

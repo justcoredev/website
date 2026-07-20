@@ -1,20 +1,40 @@
 {{ define "main" }}
-<div class="div-main">
+
+<div class="article-container">
 
     <nav>
-        <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
+        <ul class="side-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/post">Posts</a></li>
         </ul>
     </nav>
 
-    <h1>List page</h1>
+    <hr>
 
-    <ul>
-        {{ range .Pages }}
-            <li>{{ .Date }} <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    <h1>{{ .Title }}</h1>
+
+    <table class="posts-table">
+        {{ range .Pages.ByDate.Reverse }}
+        <tr>
+            <td class="post-date">
+                {{ .Date.Format "2006-01-02" }}
+            </td>
+
+            <td class="post-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </td>
+        </tr>
         {{ end }}
-    </ul>
+    </table>
+
+    <hr>
+
+    <footer>
+        <small>(c) {{ now.Year }} Justcore</small>
+    </footer>
+
 </div>
+
 {{ end }}

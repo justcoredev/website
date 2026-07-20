@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://justcore.space/"
+locale = "en-us"
 title = "Andrey Justcore"
+
+[markup.goldmark.renderer]
+unsafe= true

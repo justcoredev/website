@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <title>{{ .Title }}</title>
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XRTYN5DXE"></script>
         <script>
@@ -13,14 +16,14 @@
 
         <meta charset="UTF-8">
         <meta name="author" content="Justcore">
-        <meta name="description" content="Official website of Andrey Justcore – a student game developer based in Moscow.">
+        <meta name="description" content="Official website of Andrey Justcore – a game developer from Russia.">
         <link rel="canonical" href="https://justcore.space/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index, follow">
 
         <!-- Open Graph for Socials -->
         <meta property="og:title" content="Andrey Justcore">
-        <meta property="og:description" content="Official website of Andrey Justcore – a student game developer based in Moscow.">
+        <meta property="og:description" content="Official website of Andrey Justcore – a game developer from Russia.">
         <meta property="og:image" content="https://justcore.space/img/justcore_logo.png">
         <meta property="og:url" content="https://justcore.space/">
         <meta property="og:type" content="website">
@@ -28,7 +31,7 @@
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Andrey Justcore">
-        <meta name="twitter:description" content="Official website of Andrey Justcore – a student game developer based in Moscow.">
+        <meta name="twitter:description" content="Official website of Andrey Justcore – a game developer from Russia.">
         <meta name="twitter:image" content="https://justcore.space/img/justcore_logo.png">
 
         <script type="application/ld+json">
@@ -52,7 +55,7 @@
         "@id":"https://justcore.space/"
         },
         "jobTitle": "Game Developer",
-        "description": "Game developer based in Moscow.",
+        "description": "Game developer from Russia.",
         "birthDate": "2006-04-18",
         "image": "https://justcore.space/img/justcore_logo.png"
         }
@@ -84,23 +87,32 @@
             "name": "Who is Justcore?",
             "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Andrey \"Justcore\" Lebedev is an indie game developer based in Moscow, Russia."
+            "text": "Andrey \"Justcore\" Lebedev is a game developer based in Moscow, Russia."
             }
         }]
         }
         </script>
 
-        <link rel="preload" href="/img/empty.png" as="image">  
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
         <!-- Socials font -->
-        <script src="https://kit.fontawesome.com/71f50d4261.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d140bbf498.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        {{ $css := resources.Get "scss/main.scss" | toCSS }}
-        <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+        {{ $main := resources.Get "scss/main.scss" | toCSS }}
+        {{ $fonts := resources.Get "scss/fonts.scss" | toCSS }}
+        {{ $posts_table := resources.Get "scss/posts_table.scss" | toCSS }}
+        {{ $article := resources.Get "scss/article.scss" | toCSS }}
+
+        <link rel="stylesheet" href="{{ $fonts.RelPermalink }}">
+        <link rel="stylesheet" href="{{ $main.RelPermalink }}">
+        <link rel="stylesheet" href="{{ $posts_table.RelPermalink }}">
+        <link rel="stylesheet" href="{{ $article.RelPermalink }}">
+
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
     </head>
     <body>
