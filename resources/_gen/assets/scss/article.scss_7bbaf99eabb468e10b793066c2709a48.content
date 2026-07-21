@@ -57,6 +57,8 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 20px; }
+  .article-container a {
+    color: #7EBE3A; }
 
 .article-nav {
   width: 100%;

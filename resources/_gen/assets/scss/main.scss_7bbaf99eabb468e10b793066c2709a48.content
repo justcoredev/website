@@ -5,10 +5,11 @@ html, body {
   min-height: 100%; }
 
 a {
-  color: #7EBE3A; }
+  text-decoration: none;
+  color: #dddddd; }
 
 a:visited {
-  color: #7EBE3A; }
+  color: #dddddd; }
 
 .landing-nav {
   list-style: none;
@@ -28,7 +29,7 @@ a:visited {
       color: #dddddd;
       transition: color 0s ease; }
     .landing-nav li a:hover {
-      color: #7EBE3A !important; }
+      color: #fff !important; }
 
 .side-nav {
   list-style: none;
@@ -79,9 +80,6 @@ a:visited {
 footer {
   margin-top: 8px; }
 
-a {
-  color: #7EBE3A; }
-
 hr {
   width: 100%;
   margin-top: 10px;
@@ -99,3 +97,10 @@ hr {
   transition: transform 0s ease; }
   .footer_image_link:hover {
     color: #7EBE3A; }
+
+.go-home-div a {
+  text-decoration: none;
+  color: #565656; }
+
+.go-home-div a:visited {
+  color: #565656; }

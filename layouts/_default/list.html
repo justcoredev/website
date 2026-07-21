@@ -2,15 +2,6 @@
 
 <div class="article-container">
 
-    <nav class="article-nav">
-        <ul class="side-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/post">Posts</a></li>
-        </ul>
-    </nav>
-
     {{ .Content }}
 
     <div class="article-center">
@@ -28,6 +19,12 @@
             {{ end }}
         </table>
     </div>
+</div>
+
+<div class="article-center go-home-div">
+    <p style="margin-bottom: 20px; margin-top: 0px;">
+        <a href="javascript:history.back()">< Back</a>
+    </p>
 </div>
 
 {{ end }}
