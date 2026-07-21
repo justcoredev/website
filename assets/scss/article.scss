@@ -52,7 +52,6 @@
 @media (max-width: 550px) {
     .article-container {
         padding: 0px;
-        width: 100%;
         margin-top: 8px;
 
         .posts-table, h1{
@@ -80,6 +79,10 @@
 
     footer{
         margin: 8px;
+    }
+
+    h1{
+        font-size: 1.4em;
     }
 }
 
