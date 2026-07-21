@@ -1,5 +1,108 @@
 {{ define "main" }}
 
+<audio id="pipe-sound" src="audio/metal_pipe.mp3" preload="auto"></audio>
+
+<script>
+window.addEventListener("load", () => {
+  const logo = document.getElementById('justcore-logo');
+  const sound = document.getElementById('pipe-sound');
+  const container = document.getElementById('ghost-container');
+
+  const preloadEmpty = new Image();
+  preloadEmpty.src = '/img/empty.png';
+
+  let counter = 0;
+  let broken = false;
+  const isMobile = window.innerWidth < 570;
+
+  // Physics object vars
+  let ghost = null;
+  let angle = 0;
+  let gravity = 500;
+  let lastTime = null;
+  let fallStarted = false;
+
+  function triggerSpin() {
+    if (broken) return;
+
+    counter++;
+
+    if (counter < 20) {
+      logo.classList.remove('spin');
+      void logo.offsetWidth;
+      logo.classList.add('spin');
+    } else {
+      broken = true;
+
+      logo.classList.remove('spin');
+      logo.style.animation = 'none';
+      logo.style.animationPlayState = 'paused';
+
+      ghost = logo.cloneNode(true);
+
+      logo.removeEventListener('click', triggerSpin);
+      logo.style.pointerEvents = 'none';
+      logo.src = '/img/empty.png';    // Get logo's screen position
+      const rect = logo.getBoundingClientRect();
+
+      // Style the ghost
+      ghost.style.position = 'absolute';
+      ghost.style.left = `${rect.left}px`;
+      ghost.style.top = `${rect.top}px`;
+      ghost.style.margin = '0';
+      ghost.style.pointerEvents = 'none';
+      ghost.style.opacity = '1';
+      ghost.style.transition = 'none';
+      ghost.style.zIndex = 9999;
+
+      // Create a clone
+      container.appendChild(ghost);
+
+      // Init physics
+      x = rect.left;
+      y = rect.top;
+      vx = isMobile ? 50 : 150;
+      vy = -300;
+      angularVelocity = 0.1;
+      angle = 1;
+      fallStarted = true;
+    }
+  }
+
+  function update(time) {
+    if (!lastTime) lastTime = time;
+    const dt = (time - lastTime) / 1000;
+    lastTime = time;
+
+    if (fallStarted && ghost) {
+      vy += gravity * dt;
+      x += vx * dt;
+      y += vy * dt;
+      angle += angularVelocity * dt;
+
+      ghost.style.left = `${x}px`;
+      ghost.style.top = `${y}px`;
+      ghost.style.transform = `rotate(${angle}rad)`;
+
+      if (y > window.innerHeight + 1500) {
+        ghost.remove();
+        ghost = null;
+        fallStarted = false;
+        sound.currentTime = 0;
+        sound.play();
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  requestAnimationFrame(update);
+
+  //setTimeout(triggerSpin, 1000);
+  logo.addEventListener('click', triggerSpin);
+});
+</script>
+
 <div class="landing-container">
     <div class="landing-header">
         <img src="/img/justcore_logo_a.png" id="justcore-logo" alt="Logo"/>

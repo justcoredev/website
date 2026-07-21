@@ -17,15 +17,16 @@
         <meta charset="UTF-8">
         <meta name="author" content="Justcore">
         <meta name="description" content="Official website of Andrey Justcore – a game developer from Russia.">
-        <link rel="canonical" href="https://justcore.space/">
+        <link rel="canonical" href="{{ .Permalink }}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#000000">
 
         <!-- Open Graph for Socials -->
-        <meta property="og:title" content="Andrey Justcore">
-        <meta property="og:description" content="Official website of Andrey Justcore – a game developer from Russia.">
+        <meta property="og:title" content="{{ .Title }}">
+        <meta property="og:description" content="{{ .Description | default "Official website of Andrey Justcore – a game developer from Russia." }}">
+        <meta property="og:url" content="{{ .Permalink }}">
         <meta property="og:image" content="https://justcore.space/img/justcore_logo.png">
-        <meta property="og:url" content="https://justcore.space/">
         <meta property="og:type" content="website">
 
         <!-- Twitter -->
@@ -78,20 +79,8 @@
         }
         </script>
 
-        <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [{
-            "@type": "Question",
-            "name": "Who is Justcore?",
-            "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Andrey \"Justcore\" Lebedev is a game developer based in Moscow, Russia."
-            }
-        }]
-        }
-        </script>
+        <link rel="preload" href="/img/empty.png" as="image">  
+        <link rel="preload" as="image" href="/img/justcore_logo_a.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +89,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         
         <!-- Socials font -->
-        <script src="https://kit.fontawesome.com/d140bbf498.js" crossorigin="anonymous"></script>
+        <!--<script src="https://kit.fontawesome.com/d140bbf498.js" crossorigin="anonymous"></script>-->
 
         <!-- CSS -->
         {{ $main := resources.Get "scss/main.scss" | toCSS }}
@@ -121,4 +110,15 @@
             {{ block "main" . }}{{ end }}
         </main>
     </body>
+
+<div id="ghost-container" style="
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 9999;
+"></div>
+
 </html>

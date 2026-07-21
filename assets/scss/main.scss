@@ -16,15 +16,6 @@ a:visited {
     color: #dddddd;
 }
 
-#justcore-logo {
-    width: 192px;
-    height: auto;
-
-    image-rendering: pixelated;
-
-    transform: translate(-3px, 5px);
-}
-
 .main-div {
     background-color: #000;
 
@@ -104,4 +95,32 @@ hr {
             color: #fff;
         }
     }
+}
+
+@keyframes spinOnce {
+  from {
+    transform: translate(-3px, 5px) rotate(0deg);
+  }
+  to {
+    transform: translate(-3px, 5px) rotate(360deg);
+  }
+}
+
+#justcore-logo.spin {
+    animation: spinOnce 0.6s ease-out;
+}
+
+#justcore-logo {
+    width: 192px;
+    height: auto;
+    image-rendering: pixelated;
+    transform: translate(-3px, 5px);
+}
+
+#justcore-logo {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
