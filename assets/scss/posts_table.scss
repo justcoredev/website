@@ -23,6 +23,7 @@
 .posts-table {
     border-collapse: collapse;
     font-size: 20px;
+    margin-top: 15px;
 
     a {
         text-decoration: none;
@@ -97,9 +98,5 @@
     .latest-posts{
         width: 100%;
         min-width: 0px;
-    }
-
-    .landing-container{
-        width: 100%;
     }
 }

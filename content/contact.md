@@ -2,7 +2,7 @@
 title: "Contact"
 ---
 
-<p style="text-align: left;">Feel free to send me a message at <a href="mailto:andreyjustcore@gmail.com">andreyjustcore@gmail.com!</a></p>
+Email: andreyjustcore@gmail.com
 
 <div class="image-links-div">
     <a href="https://justcore.itch.io" target="_blank" rel="noopener" style="text-decoration: none;">

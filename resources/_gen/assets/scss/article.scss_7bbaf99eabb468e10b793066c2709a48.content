@@ -1,6 +1,7 @@
 .article-container {
-  max-width: 900px;
+  max-width: 700px;
   margin: 40px auto;
+  margin-top: 0px;
   padding: 20px; }
 
 .article-date {
@@ -8,7 +9,7 @@
   margin-bottom: 2rem; }
 
 .article-container article {
-  line-height: 1.7; }
+  line-height: 1.5; }
 
 .article-container h1 {
   margin-bottom: 0.25rem; }
@@ -26,10 +27,8 @@
 .article-container .side-nav li {
   margin: 0; }
 
-.article-container {
-  hyphens: auto; }
-  .article-container p, .article-container li, .article-container blockquote {
-    text-align: justify; }
+.article-container p, .article-container li, .article-container blockquote {
+  text-align: justify; }
 
 @media (max-width: 550px) {
   .article-container {
