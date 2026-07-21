@@ -42,6 +42,10 @@ p, a, li, small, td {
   letter-spacing: 1px;
   font-size: 20px; }
 
+.article-container p, .article-container a, .article-container li, .article-container small, .article-container td {
+  letter-spacing: 1px;
+  font-size: 18px; }
+
 small {
   letter-spacing: 1px;
   font-size: 13px;

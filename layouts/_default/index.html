@@ -4,11 +4,26 @@
     <div class="landing-header">
         <img src="/img/justcore_logo_a.png" id="justcore-logo" alt="Logo"/>
 
-        <ul class="landing-nav"> 
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/post">Blog posts</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
+        <div class="landing-text">
+            <p>
+                Hi, it's Justcore!
+            </p>
+
+            <p>
+                Feel free to message me at<br>
+                <a href="mailto:andreyjustcore@gmail.com">andreyjustcore@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <hr style="width: 100px;">
+
+    <div class="landing-posts">
+        {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+            {{ if eq .Section "post" }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ end }}
+        {{ end }}
     </div>
 </div>
 

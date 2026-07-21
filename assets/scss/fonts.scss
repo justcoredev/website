@@ -52,6 +52,13 @@ p, a, li, small, td{
     font-size: 20px;
 }
 
+.article-container{
+    p, a, li, small, td{
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+}
+
 .landing-nav{
     a{
         @extend .lato-regular;;
