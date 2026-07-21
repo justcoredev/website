@@ -12,7 +12,7 @@
     padding-top: 10px;
     font-size: 15px; }
     .latest-posts li a {
-      color: #ccc;
+      color: #7EBE3A;
       text-decoration: none; }
 
 .posts-table {
@@ -21,9 +21,11 @@
   text-align: left;
   border-collapse: collapse;
   margin-top: 20px; }
+  .posts-table a {
+    color: #7EBE3A; }
 
 .posts-table td {
-  padding: 3px 8px;
+  padding: 6px 8px;
   vertical-align: top; }
 
 .post-badge {
@@ -31,7 +33,7 @@
   text-align: right; }
 
 .new-badge {
-  color: #B6D53C; }
+  color: #7EBE3A; }
 
 .post-date {
   color: #3f3f3f;

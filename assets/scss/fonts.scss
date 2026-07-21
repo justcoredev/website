@@ -34,10 +34,28 @@
   font-style: normal;
 }
 
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 p, a, li, small, td{
     @extend .lato-regular;
     letter-spacing: 1px;
     font-size: 20px;
+}
+
+.landing-nav{
+    a{
+        @extend .lato-regular;;
+    }
 }
 
 h1{

@@ -6,10 +6,8 @@ title: "About"
 
 # About
 
-placeholder text, site under constriction
+Hi, I'm Andrey, aka Justcore, an independent game developer from Russia.
 
-Andrey Lebedev, known online as Justcore, is an independent game developer from Russia.
+I like creating experimental games focused on atmosphere, storytelling, and unusual gameplay ideas. Along the way I write code, explore low-level graphics programming, create 2D and 3D art, compose music, and generally enjoy working on stuff!
 
-I like creating experimental games with a focus on atmosphere, storytelling, and unusual gameplay ideas. I mostly work with Unity and C#, but also like to thinker with C++, OpenGL, and graphics programming in general.  
-
-This website is where I write about my projects, development process, and things I learn along the way. Also you can find my contacts here, if you'd like to reach out.
+On this website you can find my [contacts](/contact), [socials](/contact), and [blog posts](/post). 

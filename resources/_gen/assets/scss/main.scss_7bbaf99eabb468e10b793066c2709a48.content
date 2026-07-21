@@ -5,10 +5,10 @@ html, body {
   min-height: 100%; }
 
 a {
-  color: #dddddd; }
+  color: #7EBE3A; }
 
 a:visited {
-  color: #dddddd; }
+  color: #7EBE3A; }
 
 .landing-nav {
   list-style: none;
@@ -25,10 +25,10 @@ a:visited {
       text-decoration: none;
       position: relative;
       padding: 0 10px;
-      color: #ccc;
-      transition: color 0.2s ease; }
+      color: #dddddd;
+      transition: color 0s ease; }
     .landing-nav li a:hover {
-      color: #B6D53C !important; }
+      color: #7EBE3A !important; }
 
 .side-nav {
   list-style: none;
@@ -48,7 +48,7 @@ a:visited {
       color: #ccc;
       transition: color 0s ease; }
     .side-nav li a:hover {
-      color: #B6D53C !important; }
+      color: #7EBE3A !important; }
 
 #justcore-logo {
   width: 192px;
@@ -80,10 +80,7 @@ footer {
   margin-top: 8px; }
 
 a {
-  color: #ccc; }
-
-a:hover {
-  color: #B6D53C; }
+  color: #7EBE3A; }
 
 hr {
   width: 100%;
@@ -101,4 +98,4 @@ hr {
   padding-right: 5px;
   transition: transform 0s ease; }
   .footer_image_link:hover {
-    color: #B6D53C; }
+    color: #7EBE3A; }

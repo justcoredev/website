@@ -73,10 +73,10 @@
     font-size: 20px; }
     .side-nav li a {
       text-decoration: none;
-      color: #6c6c6c;
-      transition: color 0.2s ease; }
+      color: #565656;
+      transition: color 0s ease; }
     .side-nav li a:hover {
-      color: #B6D53C; }
+      color: #7EBE3A; }
 
 .article-spacing {
   height: 160px; }

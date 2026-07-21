@@ -1,3 +1,5 @@
+@import "colors";
+
 .article-container {
     max-width: 700px;
     margin: 40px auto;
@@ -106,12 +108,12 @@
 
         a {
             text-decoration: none;
-            color: #6c6c6c;
-            transition: color 0.2s ease;
+            color: #565656;
+            transition: color 0s ease;
         }
 
         a:hover {
-            color: #B6D53C;
+            color: $color-accent;
         }
     }
 }

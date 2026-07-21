@@ -18,13 +18,23 @@
   font-weight: 700;
   font-style: italic; }
 
-.lato-regular, p, a, li, small, td {
+.lato-regular, .landing-nav a, p, a, li, small, td {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal; }
 
 .lato-bold, h1 {
   font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 700;
   font-style: normal; }
 

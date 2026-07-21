@@ -1,3 +1,5 @@
+@import "colors";
+
 html, body {
     background: #000;
     color: #dddddd;
@@ -6,11 +8,11 @@ html, body {
 }
 
 a {
-    color: #dddddd;
+    color: $color-accent;
 }
 
 a:visited {
-    color: #dddddd;
+    color: $color-accent;
 }
 
 .landing-nav {
@@ -31,12 +33,12 @@ a:visited {
             text-decoration: none;
             position: relative;
             padding: 0 10px;
-            color: #ccc;
-            transition: color 0.2s ease;
+            color: #dddddd;//#ccc;
+            transition: color 0s ease;
         }
 
         a:hover {
-            color: #B6D53C !important;
+            color: $color-accent !important;
         }
     }
 }
@@ -63,7 +65,7 @@ a:visited {
         }
 
         a:hover {
-            color: #B6D53C !important;
+            color: $color-accent !important;
         }
     }
 }
@@ -108,11 +110,7 @@ footer{
 }
 
 a {
-    color: #ccc;
-}
-
-a:hover {
-    color: #B6D53C;
+    color: $color-accent; // ccc
 }
 
 hr {
@@ -132,6 +130,6 @@ hr {
     padding-right: 5px;
     transition: transform 0s ease;
     &:hover {
-        color: #B6D53C;
+        color: $color-accent;
     }
 }
