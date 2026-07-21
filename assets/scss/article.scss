@@ -5,17 +5,20 @@
     padding: 20px;
 }
 
-.article-date {
-    color: #3f3f3f;
-    margin-bottom: 2rem;
-}
-
 .article-container article {
     line-height: 1.5;
 }
 
 .article-container h1 {
+    text-align: center;
     margin-bottom: 0.25rem;
+}
+
+.article-date {
+    text-align: center !important;
+    color: #3f3f3f;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .article-container td{
@@ -76,4 +79,56 @@
     footer{
         margin: 8px;
     }
+}
+
+.article-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.article-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.side-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 20px;
+
+    li {
+        font-size: 20px;
+
+        a {
+            text-decoration: none;
+            color: #6c6c6c;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #B6D53C;
+        }
+    }
+}
+
+.article-spacing {
+    height: 160px;
+}
+
+// UTILITY FOR MD
+
+.article-center {
+    display: flex;
+    justify-content: center;
+}
+
+.image-links-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }

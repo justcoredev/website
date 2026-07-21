@@ -2,7 +2,7 @@
 
 <div class="article-container">
 
-    <nav>
+    <nav class="article-nav">
         <ul class="side-nav">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
@@ -11,17 +11,19 @@
         </ul>
     </nav>
 
-    <h1>{{ .Title }}</h1>
-
     <article>
+        {{ .Content }}
+
+        <!-- 
         {{ if eq .Section "post" }}
             <p class="article-date">
                 {{ .Date.Format "2006-01-02" }}
             </p>
         {{ end }}
+        -->
 
-        {{ .Content }}
     </article>
+
 </div>
 
 {{ end }}

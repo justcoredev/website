@@ -2,7 +2,15 @@
 title: "Contact"
 ---
 
-Email: andreyjustcore@gmail.com
+<div style="height: 170px;"></div>
+
+<h1>Contact</h1>
+
+<div class="article-center">
+<p>Email: <a href="mailto:andreyjustcore@gmail.com">andreyjustcore@gmail.com</a></p>
+</div>
+
+<div style="height: 10px;"></div>
 
 <div class="image-links-div">
     <a href="https://justcore.itch.io" target="_blank" rel="noopener" style="text-decoration: none;">

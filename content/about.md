@@ -2,6 +2,10 @@
 title: "About"
 ---
 
+<div style="height: 100px;"></div>
+
+# About
+
 placeholder text, site under constriction
 
 Andrey Lebedev, known online as Justcore, is an independent game developer from Russia.

@@ -2,7 +2,7 @@
 
 <div class="article-container">
 
-    <nav>
+    <nav class="article-nav">
         <ul class="side-nav">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
@@ -11,21 +11,23 @@
         </ul>
     </nav>
 
-    <h1>{{ .Title }}</h1>
+    {{ .Content }}
 
-    <table class="posts-table">
-        {{ range .Pages.ByDate.Reverse }}
-        <tr>
-            <td class="post-date">
-                {{ .Date.Format "2006-01-02" }}
-            </td>
+    <div class="article-center">
+        <table class="posts-table">
+            {{ range .Pages.ByDate.Reverse }}
+            <tr>
+                <td class="post-date">
+                    {{ .Date.Format "2006-01-02" }}
+                </td>
 
-            <td class="post-title">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </td>
-        </tr>
-        {{ end }}
-    </table>
+                <td class="post-title">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </td>
+            </tr>
+            {{ end }}
+        </table>
+    </div>
 </div>
 
 {{ end }}
