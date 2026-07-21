@@ -1,12 +1,12 @@
 ---
-title: "How I made Burning Snow"
+title: "Development of Burning Snow"
 date: 2026-07-19T23:46:49+03:00
 draft: false
 ---
 
 
 
-# How I made Burning Snow
+# Development of Burning Snow
 
 Will share some concepts and graphics techniques of Burning Snow here soon :] Don't mind the Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque porta erat, ut sollicitudin metus convallis blandit. Nunc ut rhoncus augue. Aliquam commodo sed neque vitae scelerisque. Proin tempor tempus dui. Morbi eget sapien lorem. Etiam pulvinar sollicitudin nisl at scelerisque. Nulla facilisi. Aliquam mollis sed quam ac porttitor. Phasellus aliquam lorem sit amet laoreet hendrerit. Suspendisse sit amet lacus commodo, efficitur nulla sit amet, lobortis mauris. Vestibulum ullamcorper posuere quam sed rhoncus. Vivamus ultrices lectus ac lorem tempus fermentum. Integer suscipit pellentesque tellus, nec eleifend quam sodales non. Nullam ut erat non massa sodales lobortis. Vivamus ut sagittis nunc, eget laoreet neque.
 
