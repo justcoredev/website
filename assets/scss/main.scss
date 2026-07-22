@@ -124,3 +124,21 @@ hr {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
+.image-links-div {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+
+    transform: translate(-4px);
+
+    a{
+        font-size: 1.8em;
+        color: #767676;
+
+        &:hover {
+            color: #a4a4a4;
+        }
+    }
+}
